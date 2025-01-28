@@ -1,0 +1,87 @@
+@import './base.css';
+
+#app {
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+}
+
+main{
+  padding-left: 20vw;
+}
+
+.message-error{
+  color: #ff0000;
+  font-size: 12px;
+}
+
+.message-sucess{
+  color: #0e6215;
+  font-size: 12px;
+}
+
+.message-sucess-2{
+  color: #0e6215;
+  font-size: 16px;
+}
+
+.message-sucess-2 a{
+  color: #0e6215;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.message-error-2{
+  color: #ff0000;
+  font-size: 16px;
+}
+
+.message-error-2 a{
+  color: #c60000;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.button-default{
+  background-color: #FF5722;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.2s all;
+  display: block;
+}
+
+.form-content{
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  padding: 0 25px;
+  height: 100%;
+  margin-top: 20px;
+}
+
+.login-content{
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  padding: 0 25px;
+  height: 100%;
+  margin: 20px auto;
+  width: 100%;
+}
+
+@media screen and (max-width: 750px){
+  main{
+    padding: 0;
+    padding-bottom: 10vh;
+  }
+}
