@@ -26,10 +26,10 @@ export async function deleteDataById(type, id) {
     const dbJson = JSON.stringify(db);
     const dbBase64 = btoa(dbJson); 
   
-    const response = await fetch(process.env.URL_API, {
+    const response = await fetch(import.meta.env.VITE_URL_API, {
       method: 'PUT',
       headers: {
-        Authorization: process.env.TOKEN, 
+        Authorization: import.meta.env.VITE_TOKEN, 
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
